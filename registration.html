@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form</title>
+</head>
+<body>
+    <h1> Registration Form</h1>
+    <p>Please fill out the registration details below.</p>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Contact Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <label for="department">Department / Course:</label><br>
+            <select id="department" name="department" required>
+                <option value="">Select</option>
+                <option value="bca">BCA</option>
+                <option value="bba">BBA</option>
+                <option value="btech">B.Tech</option>
+                <option value="mba">MBA</option>
+                <option value="mca">MCA</option>
+            </select><br><br>
+
+            <label for="year">Year of Study:</label><br>
+            <select id="year" name="year" required>
+                <option value="">Select</option>
+                <option value="first">First Year</option>
+                <option value="second">Second Year</option>
+                <option value="third">Third Year</option>
+                <option value="fourth">Fourth Year</option>
+            </select><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Account Security</legend>
+
+            <label for="password">Create Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+        </fieldset><br>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+</body>
+</html>
